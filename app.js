@@ -38,9 +38,7 @@ app.get('/all', (req, res)=>{
         }
 
 
-    }
-    );
-    res.send("erolvo");
+    });
     
 });
 
