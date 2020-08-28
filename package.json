@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "heroku",
   "version": "1.0.0",
   "description": "api ",
   "main": "app.js",
