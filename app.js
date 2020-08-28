@@ -21,6 +21,10 @@ const connection = mysql.createConnection({
 
 
 //obtener lista con todos los datos
+app.get('/', (req, res)=>{
+    res.send('Welcome to my api');
+});
+
 app.get('/all', (req, res)=>{
     const sql = 'SELECT * FROM automoviles';
     connection.query(sql, (error, results)=> {
@@ -36,6 +40,7 @@ app.get('/all', (req, res)=>{
 
     }
     );
+    res.send("erolvo");
     
 });
 
