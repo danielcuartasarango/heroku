@@ -1,7 +1,9 @@
 const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
+
 const { restart } = require('nodemon');
+
 const PORT = process.env.PORT || 3050;
 
 const app = express();
@@ -11,11 +13,12 @@ app.use(bodyParser.json());
 //MySql
 
 const connection = mysql.createConnection({
-    host:'localhost',
-    user: 'root',
-    password: '',
-    database:'autos'
+    host:'us-cdbr-east-02.cleardb.com',
+    user: 'bd65df5b37f44c',
+    password: '331bddbd',
+    database:'heroku_51982700123b2b7'
 });
+
 
 //obtener lista con todos los datos
 app.get('/all', (req, res)=>{
